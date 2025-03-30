@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     
     # CORS settings
     # ALLOWED_ORIGINS: List[str] = os.getenv("ALLOWED_ORIGINS", "http://localhost:3001").split(",")
-    ALLOWED_ORIGINS: List[str] = json.loads(os.getenv("ALLOWED_ORIGINS", '["http://localhost:3000"]'))
+    ALLOWED_ORIGINS: List[str] = json.loads(os.getenv("ALLOWED_ORIGINS", '["http://localhost:3000" , "https://whoislookup-beryl.vercel.app"]'))
 
     # Server settings
     HOST: str = os.getenv("HOST", "0.0.0.0")
